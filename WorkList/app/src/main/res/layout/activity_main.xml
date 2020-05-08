@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorO"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de asignaturas"
+        android:textColor="@color/colorW"
+        android:background="@color/colorB"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+>
+
+                <EditText
+                    android:id="@+id/editText_Asig"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese asignatura"
+                    android:textColorHint="@color/colorW"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/btnAgregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar"
+                    android:padding="5dp"
+                    android:textColor="@color/colorW"
+                    android:textStyle="bold"
+                    android:layout_marginRight="15dp"
+                    android:onClick="Asignatura_Oncliclk"
+                    android:background="@color/colorA"/>
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:text="Mis Asignaturas"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorW"
+                android:background="@color/colorP"/>
+
+            <ListView
+                android:id="@+id/ListAsig"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
